@@ -1,0 +1,137 @@
+/* General body styling */
+body {
+    background-color: hsla(197, 91%, 71%, 0.5); /* Light blue background */
+    font-family: 'Inter', sans-serif; 
+    margin: 0;
+    padding: 20px;
+    color: #333; /* Darker text for readability */
+    line-height: 1.6;
+}
+
+/* Main content container */
+main {
+    max-width: 1200px; 
+    margin: 20px auto; 
+    background-color: #ffffff; 
+    padding: 30px;
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+
+    /* --- Two-Column Layout using CSS Grid --- */
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+    /* --- End Two-Column Layout --- */
+}
+
+
+
+/* Headings */
+h1, h2, h3 {
+    color: #2c3e50; 
+    text-align: center; 
+    margin-bottom: 15px;
+    font-weight: 700; 
+}
+
+h1 {
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid hsla(197, 91%, 71%, 0.8); 
+    grid-column: 1 / -1; 
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-top: 25px;
+    color: #34495e;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Image styling */
+img {
+    display: block; 
+    margin: 20px auto;
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
+}
+
+/* Lists (Ingredients and Directions) */
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 25px; 
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Horizontal rules and dividers */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 40px 0;
+}
+
+/* Forms */
+form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+form label {
+    display: inline-block; 
+    width: 80px; 
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input[type="number"] {
+    width: calc(100% - 90px); 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+/* Fieldset for radio buttons */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+}
+
+fieldset input[type="radio"] {
+    margin-right: 8px;
+}
+
+fieldset label {
+    font-weight: normal;
+    width: auto; /* Override general label width for radio labels */
+    display: inline-block;
+    margin-bottom: 5px;
+}
